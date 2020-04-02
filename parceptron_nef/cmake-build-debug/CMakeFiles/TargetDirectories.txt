@@ -1,0 +1,3 @@
+C:/Users/frost/CLionProjects/parceptron_nef/cmake-build-debug/CMakeFiles/parceptron_nef.dir
+C:/Users/frost/CLionProjects/parceptron_nef/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/frost/CLionProjects/parceptron_nef/cmake-build-debug/CMakeFiles/rebuild_cache.dir
