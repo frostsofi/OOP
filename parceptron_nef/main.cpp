@@ -3,7 +3,7 @@
 #include "Neural_net.h"
 #include "Normalizer.h"
 
-float h = 0.05;
+float h = 0.002;
 
 enum Layers_numeration
 {
@@ -23,8 +23,8 @@ int main()
     Parser::parseLabels("C:\\Users\\frost\\CLionProjects\\parceptron_nef\\data\\data4.csv");
 
     int layers_num_neurons[number_layers];
-    layers_num_neurons[num_first_layer] = 200;
-    layers_num_neurons[num_second_layer] = 500;
+    layers_num_neurons[num_first_layer] = 30;
+    layers_num_neurons[num_second_layer] = 900;
     layers_num_neurons[num_third_layer] = 2;
 
     auto *net = new Neural_net(number_layers, layers_num_neurons, num_inputs);
@@ -55,7 +55,7 @@ int main()
         if (std::abs(signal) < 0.1)
             std::cout <<"correct" << std::endl;
         else
-            std::cout <<"not correct " << std::abs(signal) << std::endl;
+            std::cout <<"not correct " << signal << std::endl;
         count++;
     }
 
